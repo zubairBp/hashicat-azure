@@ -2,10 +2,6 @@ module "network" {
   source  = "app.terraform.io/Best-practises-demo/network/azurerm"
   version = "3.5.0"
   # insert required variables here
-  resource_group_name = azurerm_resource_group.zee-rg.name
+  resource_group_name = azurerm_resource_group.myresourcegroup.name
 }
 
-resource "azurerm_resource_group" "zee-rg" {
-  name     = "zee-module-testing"
-  location = "southeastasia"
-}
